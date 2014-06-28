@@ -1,7 +1,4 @@
-
-
 #!/usr/bin/env bash
-
 
 
 
@@ -103,8 +100,7 @@ mkdir /home/vagrant/magento/magerun
 cd /home/vagrant/magento/magerun
 curl -o n98-magerun.phar https://raw.githubusercontent.com/netz98/n98-magerun/master/n98-magerun.phar
 chmod +x ./n98-magerun.phar
-cp ./n98-magerun.phar /usr/local/bin/
-mv /usr/local/bin/n98-magerun.phar /usr/local/bin/magerun
+cp ./n98-magerun.phar /usr/local/bin/magerun
 
 ## Line below is to avoid "Comments starting with '#' are deprecated" message
 find /etc/php5/cli/conf.d/ -name "*.ini" -exec sed -i -re 's/^(\s*)#(.*)/\1;\2/g' {} \;
