@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     # Fine tune VBox
     config.vm.provider "virtualbox" do |vb|
         vb.customize ["modifyvm", :id, "--memory", "1024"]
-        vb.customize ["modifyvm", :id, "--cpus", "4"]
+        vb.customize ["modifyvm", :id, "--cpus", "2"]
         vb.customize ["modifyvm", :id, "--cpuexecutioncap", "90"]
     end
 
