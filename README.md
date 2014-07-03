@@ -15,7 +15,7 @@
 * phpMyAdmin
 * A more than simple virtual host creation script - [https://github.com/herveguetin/virtualhost](https://github.com/herveguetin/virtualhost)
 * Redis - [http://redis.io/](http://redis.io/)
-* Varnish (not started by default) - [https://www.varnish-cache.org](https://www.varnish-cache.org)
+* Varnish - [https://www.varnish-cache.org](https://www.varnish-cache.org)
 * Solr 4.8.1 - [http://lucene.apache.org/solr/](http://lucene.apache.org/solr/)
 * Compass - [http://compass-style.org/](http://compass-style.org/)
 * Magerun - [https://github.com/netz98/n98-magerun](https://github.com/netz98/n98-magerun)
@@ -65,7 +65,7 @@ __Redis MAY NOT be started on `vagrant up`.__
 
 ## About Varnish
 
-__Varnish MAY NOT be started on `vagrant up`.__
+__Varnish IS NOT be started on `vagrant up`.__
 
 ### Starting Varnish
 
