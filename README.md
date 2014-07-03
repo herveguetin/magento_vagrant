@@ -65,7 +65,7 @@ __Redis MAY NOT be started on `vagrant up`.__
 
 ## About Varnish
 
-__Varnish IS NOT be started on `vagrant up`.__
+__Varnish IS NOT started on `vagrant up`.__
 
 ### Starting Varnish
 
