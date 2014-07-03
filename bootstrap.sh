@@ -88,6 +88,20 @@ apt-get -y install varnish
 # But do not start Varnish
 service varnish stop
 
+# SolR
+# --------------------
+apt-get install -y openjdk-6-jre
+mkdir /home/vagrant/magento/_utils/solr
+cd /home/vagrant/magento/_utils/solr
+wget http://mir2.ovh.net/ftp.apache.org/dist/lucene/solr/4.8.1/solr-4.8.1.tgz
+tar -zxf solr-4.8.1.tgz
+git clone git@bitbucket.org:agencesoon/soon_solr.git
+cd soon_solr
+git checkout -b solr remotes/origin/solr_magento_core
+cp -r . /home/vagrant/magento/_utils/solr/solr-4.8.1/
+cd /home/vagrant/magento/_utils/solr/solr-4.8.1/magento
+nohup java -jar start.jar &
+
 # Compass
 # --------------------
 apt-get -y install ruby
